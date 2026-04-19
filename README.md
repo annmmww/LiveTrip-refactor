@@ -246,10 +246,3 @@ rules: {
   "editor.defaultFormatter": "esbenp.prettier-vscode"
 }
 ```
-
-### 4.2 명령어 예시
-
-```bash
-pnpm lint
-pnpm lint --fix
-```
