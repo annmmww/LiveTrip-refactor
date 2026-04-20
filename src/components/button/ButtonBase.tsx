@@ -24,20 +24,20 @@ const typo = {
 
 const toneClassMap = {
   primary: {
-    normal:
-      'bg-primary-500 text-white hover:bg-primary-hover disabled:bg-gray-200 disabled:text-gray-50',
     active:
+      'bg-primary-500 text-white hover:bg-primary-hover disabled:bg-gray-200 disabled:text-gray-50',
+    normal:
       'bg-white text-gray-600 border border-gray-200 disabled:bg-white disabled:text-gray-200 disabled:border-gray-200',
   },
   secondary: {
-    normal:
-      'bg-primary-500 text-white hover:bg-primary-hover disabled:bg-white disabled:text-gray-200 disabled:border disabled:border-gray-200',
     active:
+      'bg-primary-500 text-white hover:bg-primary-hover disabled:bg-white disabled:text-gray-200 disabled:border disabled:border-gray-200',
+    normal:
       'bg-white text-gray-600 border border-gray-200 disabled:bg-white disabled:text-gray-200 disabled:border-gray-200',
   },
   label: {
-    normal: 'bg-primary-100 text-gray-950 hover:bg-label-hover',
-    active: 'text-gray-600',
+    active: 'bg-primary-100 text-gray-950 hover:bg-label-hover',
+    normal: 'text-gray-600',
   },
 } satisfies Record<ButtonVariant, Record<ButtonTone, string>>;
 

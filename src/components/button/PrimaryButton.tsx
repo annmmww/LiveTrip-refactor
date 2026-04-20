@@ -7,5 +7,5 @@ type PrimaryButtonProps = Omit<
 >;
 
 export default function PrimaryButton({ ...props }: PrimaryButtonProps) {
-  return <ButtonBase variant='primary' tone='normal' {...props} />;
+  return <ButtonBase variant='primary' tone='active' {...props} />;
 }
