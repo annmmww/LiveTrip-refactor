@@ -42,7 +42,7 @@ const toneClassMap = {
 } satisfies Record<ButtonVariant, Record<ButtonTone, string>>;
 
 const baseClassName =
-  'inline-flex w-full items-center justify-center gap-1 text-center select-none transition-colors motion-safe:transition-transform motion-safe:transition-shadow duration-200 ease-[cubic-bezier(0.25,0.1,0.25,1)] enabled:hover:-translate-y-0.5 enabled:hover:shadow-lg enabled:active:translate-y-0 enabled:active:shadow [&>img]:h-4 [&>img]:w-4 md:[&>img]:h-6 md:[&>img]:w-6 lg:[&>img]:h-6 lg:[&>img]:w-6';
+  'inline-flex w-full items-center justify-center gap-1 text-center select-none transition-[color,background-color,border-color,outline-color,text-decoration-color,fill,stroke,transform,box-shadow] duration-200 ease-[cubic-bezier(0.25,0.1,0.25,1)] motion-reduce:transition-none enabled:hover:-translate-y-0.5 enabled:hover:shadow-lg enabled:active:translate-y-0 enabled:active:shadow [&>img]:h-4 [&>img]:w-4 md:[&>img]:h-6 md:[&>img]:w-6 lg:[&>img]:h-6 lg:[&>img]:w-6';
 
 export default function ButtonBase({
   variant,
